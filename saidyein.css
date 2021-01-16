@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image:linear-gradient( 180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://wallpaperose.com/wp-content/uploads/2014/09/Beautiful-Mountain-Scenery.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  width:fit-content;
+  height: 60px;
+}
+ul {
+  position: absolute;
+  right: 10px;
+  top: 22px;
+}
+li {
+  display: inline-block;
+  padding: 10px;
+  width: 80px;
+  height: 40px;
+  color: white;
+  text-align: center;
+}
+
+.name {
+  position: absolute;
+  top: 32px;
+  left: 78px;
+  width: 80px;
+  color: white;
+}
+.logo{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+}
+h1 {
+  font-size: 2rem;
+  color: aliceblue;
+}
+h2{
+  margin-top:10px;
+  font-size: 1rem;
+  color: #acabaa;
+}
+
+.container{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  height: 420px;
+  margin-top: 160px;
+}
+.profile {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+.id{
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  }
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  height: 100px;
+  width: 100%;
+  } 
+.button{
+  width: 30px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid white;
+}
+.button p{
+  height: 60px;
+  color: #acabaa00;
+}
+.button:hover{
+  background-color: rgba(0, 255, 255, 0.336);
+}
+li:hover {
+  border-bottom: 4px solid white;
+  background-color: rgba(255, 255, 255, 0.164);
+}
+
+
+@media (max-width:700px){
+  .name{
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width:60px;
+  }
+  li{
+    padding: 5px 0px;
+    margin: 5px;
+    width:max-content;
+  }
+}
+@media (max-width:424px){
+  .name{
+    display: none;
+  }
+  .logo{
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width:40px;
+  }
+  li{
+    font-size: 12px;
+    padding:0;
+    margin: 3px;
+    width:max-content;
+  }
+}
