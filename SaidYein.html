@@ -13,37 +13,39 @@
   <title>Document</title>
 </head>
 
-<body>
+<body id="body">
   <header>
-    <img class="logo" src="./resimler/logo.png" alt="logo">
+    <img class="logo" src="../resimler/logo.png" alt="logo">
     <p class="name">SaidYein</p>
+    <button onclick="switchMode()" style="position: fixed; top:4px; right: 20px; z-index: 10;">Switch</button>
     <nav>
       <ul>
         <a href="#">
-          <li> Home </li>
+          <li>Home</li>
         </a>
         <a href="#">
-          <li> About </li>
+          <li>About</li>
         </a>
         <a href="#">
-          <li> Services </li>
+          <li>Services</li>
         </a>
         <a href="#">
-          <li> Work </li>
+          <li>Works</li>
         </a>
         <a href="#">
-          <li> Clients </li>
+          <li>Clients</li>
         </a>
         <a href="#">
-          <li> Contact </li>
+          <li>Contact</li>
         </a>
       </ul>
     </nav>
 
   </header>
+
   <section class="container">
-    <img class="profile" src="./resimler/pp1.png" alt="profile pic">
-  
+    <img class="profile" src="../resimler/pp1.png" alt="profile pic">
+
     <section class="id">
       <h1>Hi. I'm Said Yeginoglu</h1>
       <h2>I'M A WEB DEVELOPER</h2>
@@ -51,12 +53,20 @@
   </section>
 
   <div id="footer">
-  <footer class="button">
-    <a href="#">
-      <p>:</p>
-    </a>
-  </footer>
-</div>
+    <footer class="button">
+      <a href="#">
+        <p>.</p>
+      </a>
+    </footer>
+  </div>
+
+  <script>
+    function switchMode() {
+      var element = document.body;
+      element.classList.toggle("dark");
+    }
+  </script>
+
 </body>
 
 </html>
